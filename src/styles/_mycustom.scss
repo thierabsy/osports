@@ -1,0 +1,112 @@
+body{
+    height: 2000px;
+}
+.Slider{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color1 linear-gradient(45deg, $color1, gray);
+    .cslider{
+        text-align: center;
+        height: 100%;
+        .sliderwrapper{
+            height: 100%;
+            .coverflow__actions__MMUtW .coverflow__button__2hjX4 {
+                border: 1px solid $color1 !important;
+                background: $color1  !important;
+                color: gainsboro;
+                cursor: pointer;
+                &:hover{
+                    background: gray !important;
+                    border: none  !important;
+                }
+            }
+            .img{
+                &:hover{
+                    transform: scale(1.2) translateY(-10px);
+                }
+            }
+            .coverflow__actions__MMUtW{
+                bottom: 20px;
+            }
+        }
+    }
+}
+
+// HomepageContent
+.Articles{
+   .article{
+       margin-bottom: 10px;
+       border: 1px solid gainsboro;
+       position: relative;
+       border-radius: 10px;
+       background: white;
+       border-top-right-radius: 30px;
+       transition: 0.5s;
+       &:after {
+            position: absolute;
+            content: "";
+            top: 5px;
+            left: 5px;
+            right: -5px;
+            bottom: -5px;
+            /* border: 1px solid gray; */
+            z-index: -1000;
+            background: $color1;
+            border-radius: 10px;
+            // transition: opacity 0.4s;
+        }
+        &:hover{
+            transform: translate(5px);
+            background: whitesmoke;
+            &:after{
+                background: white;
+                z-index: -1000;
+                right: 0px;
+                bottom: 0px;
+                // opacity: 0;
+            }
+        }
+        img{
+            width: 100%;
+            border-top-right-radius: 30px;
+            border-top-left-radius: 10px;
+        }
+        .artLinks{
+            a{
+                color: inherit;
+                &:hover{
+                    text-decoration: none;
+                }
+                &.a--left{
+                    color: white;
+                    padding: 2px;
+                    .categorie{
+                        font-size: 13px;
+                        padding: 0 2px;
+                        border-radius: 10px;
+                    }
+                }
+                &.a--right{
+                    h5{
+                        font-size: 16px;
+                    }
+                    p{
+                        overflow: hidden;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .artFooter{
+            font-size: 13px;
+            padding: 3px 5px;
+            border-top: 1px solid gainsboro;
+            .auteur{
+                border-left: 1px solid gainsboro;
+                border-right: 1px solid gainsboro;
+            }
+        }
+   }
+}

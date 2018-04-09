@@ -1,0 +1,240 @@
+.Topbar{
+    // height: 20px;
+    background: $color1;
+    color: gainsboro;
+    font-weight: 600;
+    box-shadow: 0 0 15px black;
+    .tbLeft{
+        
+    }
+    .tbCenter{
+        .socialIcon{
+            color: gainsboro;
+            padding: 3px;
+            text-align: center;
+            // background: gray;
+            margin: 2px 5px;
+            border-radius: 50%;
+            &:hover{
+                text-decoration: none;
+            }
+            .tbIcon{
+                transition: all 0.5s;
+                &:hover{
+                    transform: scale(1.5);
+                    &.fa-facebook-f{
+                        color: #3b5998;
+                    }
+                    &.fa-linkedin-in{
+                    color: #007bb5;
+                    }
+                                        
+                    &.fa-twitter{
+                    color: #55acee;}
+                                        
+                    &.fa-youtube{
+                    color: #ff0000;
+                    }
+                }
+            }
+        }
+    }
+    .tbRight{
+
+    }
+}
+.Toplogo {
+    margin: 25px;
+    span.sloganspan {
+        border-bottom: 2px solid;
+        border-top: 2px solid;
+        margin: 5px;
+    }
+}
+.Ologo{
+    .logowrapper{
+        width: 110px;
+        border: 5px solid $color1;
+        padding: 4px 3px;
+        border-radius: 20px;
+        margin: 10px auto;
+        .icon{
+            margin-right: 3px;
+            color: white;
+            background: $color1;
+            border-radius: 50%;
+            text-align: center;
+            padding: 3px;
+            .fa-star{
+                padding-left: 2px;
+            }
+        }
+        .text{
+            color: $color1;
+            font-weight: bold;
+            transform: scaleY(1.1);
+        }
+    }
+}
+
+.Head{
+    background: #e0e0e0 radial-gradient(ellipse , transparent,transparent, #e0e0e0, transparent, #e0e0e0);
+    box-shadow: inset 0 0 50px;
+}
+
+.Header{
+    text-align: center;
+    background: #bdbdbd;
+    box-shadow: 0 -1px 0px 1px rgb(46, 77, 131);
+    .accueil{
+        color: $color1;
+        background: lightgrey;
+        padding: 5px 10px;
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 20px;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    ul{
+        display: inline-flex;
+        // justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        padding: 5px;
+        margin-bottom: 0;
+        li{
+            list-style: none;
+            padding: 5px 15px;
+            &:hover{
+                background: lightgrey;
+                padding: 5px 10px;
+                box-shadow: inset 0 0 5px grey;
+                border-radius: 20px;
+            }
+            a{
+                color: $color1;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.SideMenu{
+    border: 1px solid $color1;
+    h5{
+        background: $color1;
+        color: gainsboro;
+        padding-bottom: 5px;
+    }
+    ul{
+        display: inline-flex;
+        // justify-content: center;
+        // align-items: center;
+        padding-left: 0 !important;
+        padding-top: 0 !important;
+        padding: 10px;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+        margin-left: 5px;
+        li{
+            list-style: none;
+            padding: 5px 15px;
+            margin-bottom: 3px;
+            background: gray;
+            border-radius: 20px;
+            transition: all 0.5s;
+            opacity: .8;
+            &:hover{
+                transform: translateX(10px);
+                opacity: 1;
+                border-right: 4px solid $color1;
+                border-left: 4px solid $color1;
+                padding-right: 34px;
+                box-shadow: 0 0 10px;
+                .fa-angle-right{
+                    transform: rotate(360deg);
+                }
+            }
+            a{
+                color: $color1;
+                display: block;
+                &:hover{
+                    text-decoration: none;
+                }
+                .sidemenutext{
+                    // min-width: 102px;
+                }
+                .fa-angle-right{
+                    float: right;
+                    margin-top: 5px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+// Resultats
+.Resultats{
+    h4{
+        background: gray;
+        text-align: center;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .list-group{
+        text-align: center;
+        .list-group-item{
+        
+        }   
+    }
+}
+
+// Fil Actualité
+.FilActu{
+    .faTitre{
+        background: $color1;
+        color: gainsboro;
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    ul{
+        padding-left: 0;
+        .actuItem{
+            list-style: none;
+            font-size: 13px;
+            border-bottom: 1px dotted $color1;
+            padding-top: 5px;
+            .categorie{
+                color: rgba(0,0,0,.5);
+                span{
+                    padding: 2px 4px;
+                    background: gainsboro;
+                }
+            }
+            a{
+                color: inherit;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// Banner 
+.banner{
+    height: 50px;
+}
+
+.title--h5{
+    background: $color1;
+    color: gainsboro;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 3px;
+    
+}
