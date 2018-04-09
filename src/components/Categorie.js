@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import queryString from 'query-string';
+// import queryString from 'query-string';
 import Ologo from './Ologo';
 import Header from './Header';
 import Slider from './Slider';
