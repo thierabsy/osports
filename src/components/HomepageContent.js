@@ -1,6 +1,7 @@
 import React from 'react';
 import { homecontent } from './data/homecontent';
 import { categories } from './data/categories';
+import { domain } from './domain';
 
 let catFilter = (categorie) => categories.filter( a => a.categorie === categorie);
 const articles = homecontent.map((item, i) => {
@@ -14,7 +15,7 @@ const articles = homecontent.map((item, i) => {
   return (
     <div className={`col col-sm-12 col-md-${item.size}`} key={ i } > 
       <div className="article">
-        <img src={ `img/${item.image}.jpg` } alt={ item.categorie } style={{ height: imgHeight }} />
+        <img src={ `${domain}/img/${item.image}.jpg` } alt={ item.categorie } style={{ height: imgHeight }} />
         <div className="artLinks d-flex">
           <a href="#" className="a--left">
             <span className="categorie" style={styles} > 

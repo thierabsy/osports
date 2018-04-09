@@ -3,7 +3,7 @@ import { resultats } from './data/resultats';
 
 const rslts = resultats.map((item, i) => {
   return (
-    <li className="list-group-item"> 
+    <li className="list-group-item" key={ i }> 
       <span className="equip win"> { item.home_team } </span> 
       <span className="score-wrapper">
         <span className="score"> { item.home_score } </span> -
